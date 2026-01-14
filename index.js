@@ -1,8 +1,8 @@
 const { Client, GatewayIntentBits } = require("discord.js");
 const cron = require("node-cron");
 
-const TOKEN = "MTQ2MDg0NDI4MzgyODYzMzY0Mg.GH_AKZ.ggtRc9IfMpy-ChkmWVl_ATPFx5uA_FwUjlQdrk";
-const CHANNEL_ID = "1460848936301367328";
+const TOKEN = process.env.BOT_TOKEN;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds]
